@@ -77,7 +77,7 @@ EPUBJS.core.request = function(url, type, withCredentials) {
 	}
 
 	xhr.onreadystatechange = handler;
-	xhr.open("GET", url, true);
+	xhr.open("POST", url, true);
 
 	if(withCredentials) {
 		xhr.withCredentials = true;
